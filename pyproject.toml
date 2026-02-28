@@ -1,0 +1,58 @@
+[project]
+name = "acme-cli"
+version = "0.1.0"
+description = "UV-first, AI-agent-first Python CLI template"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Your Team" }]
+license = { text = "MIT" }
+dependencies = [
+  "typer>=0.16.0",
+  "rich>=14.0.0",
+  "pydantic-settings>=2.10.0",
+]
+
+[project.scripts]
+acme = "acme_cli.cli:app"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.0",
+  "pytest-cov>=6.0.0",
+  "ruff>=0.12.0",
+  "mypy>=1.16.0",
+  "mkdocs-material>=9.6.0",
+  "mkdocstrings[python]>=0.30.0",
+]
+
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=acme_cli --cov-report=term-missing --cov-fail-under=85"
+testpaths = ["tests/integration"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+pretty = true
+packages = ["acme_cli"]
+
+[tool.coverage.run]
+source = ["src/acme_cli"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

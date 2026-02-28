@@ -1,0 +1,14 @@
+# Winget manifest placeholder
+# Generate real manifests with: wingetcreate new
+PackageIdentifier: franzsaggl-spec.AcmeCli
+PackageVersion: 0.1.0
+PackageName: acme-cli
+Publisher: franzsaggl-spec
+ShortDescription: AI-agent-first internal CLI
+Installers:
+  - Architecture: x64
+    InstallerType: exe
+    InstallerUrl: https://github.com/franzsaggl-spec/acme-cli/releases/download/v0.1.0/acme-cli-windows-x64-installer.exe
+    InstallerSha256: REPLACE_WITH_REAL_SHA256
+ManifestType: singleton
+ManifestVersion: 1.6.0

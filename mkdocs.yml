@@ -1,0 +1,22 @@
+site_name: acme-cli
+site_url: https://franzsaggl-spec.github.io/acme-cli/
+repo_url: https://github.com/franzsaggl-spec/acme-cli
+repo_name: franzsaggl-spec/acme-cli
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Architecture: architecture.md
+  - Operations: operations.md
+  - Claude Code Rollout Notes: claude-code.md
