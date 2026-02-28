@@ -52,6 +52,7 @@ winget upgrade franzsaggl-spec.AcmeCli
 cp -R python-cli-template my-new-cli
 cd my-new-cli
 uv sync --extra dev
+./scripts/install-local-hooks.sh
 ./scripts/pre-commit-check.sh
 uv run acme --help
 ```

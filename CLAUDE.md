@@ -1,6 +1,6 @@
 # CLAUDE.md — Commit Gate (No CI)
 
-Before **every commit**, run all of these locally and ensure they pass:
+Before **every commit and push**, run all of these locally and ensure they pass:
 
 ```bash
 uv run ruff format .
