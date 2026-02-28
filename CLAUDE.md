@@ -19,6 +19,7 @@ uv run pytest --cov=acme_cli --cov-report=term-missing --cov-fail-under=85
 6. Never commit secrets.
 7. API tokens/keys must come from environment variables only.
 8. Default UX should be AI-agent-friendly (machine-readable output where appropriate).
+9. File-backed state must handle missing, empty, or corrupted files gracefully.
 
 ## Definition of done
 

@@ -8,7 +8,6 @@ authors = [{ name = "Your Team" }]
 license = { text = "MIT" }
 dependencies = [
   "typer>=0.16.0",
-  "rich>=14.0.0",
   "pydantic-settings>=2.10.0",
 ]
 
@@ -52,6 +51,7 @@ packages = ["acme_cli"]
 
 [tool.coverage.run]
 source = ["src/acme_cli"]
+disable_warnings = ["module-not-measured"]
 
 [tool.coverage.report]
 show_missing = true

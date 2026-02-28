@@ -26,3 +26,4 @@ docs/
 - One integration test module per command.
 - Keep parsing + output in command modules, keep config/update concerns separate.
 - Fail fast on missing required environment variables.
+- If you persist local state, treat missing/empty/corrupt files as recoverable defaults.

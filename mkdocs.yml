@@ -19,4 +19,5 @@ nav:
   - Installation: install.md
   - Architecture: architecture.md
   - Operations: operations.md
+  - Release Security: release-security.md
   - Claude Code Rollout Notes: claude-code.md

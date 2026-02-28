@@ -1,5 +1,4 @@
 import typer
-from rich import print
 
 from acme_cli.config import get_settings
 
@@ -14,10 +13,10 @@ def check(
     token_configured = bool(settings.api_token)
 
     if json:
-        print(
+        typer.echo(
             '{"status":"ok","service":"acme-cli","token_configured":'
             + ("true" if token_configured else "false")
             + "}"
         )
     else:
-        print(f"acme-cli: ok (token_configured={token_configured})")
+        typer.echo(f"acme-cli: ok (token_configured={token_configured})")

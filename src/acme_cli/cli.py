@@ -1,15 +1,15 @@
 import typer
 
-from acme_cli.commands.health import app as health_app
+from acme_cli.commands import register_commands
 from acme_cli.updater import maybe_auto_update
 
 app = typer.Typer(
     add_completion=False,
     no_args_is_help=True,
-    help="AI-agent-first internal CLI template",
+    help="Simple internal CLI template",
 )
 
-app.add_typer(health_app, name="health")
+register_commands(app)
 
 
 @app.callback()
