@@ -6,6 +6,7 @@ For native installers, publish release artifacts with checksums.
 
 - Generate SHA256 for each release artifact
 - Publish `checksums.txt` alongside binaries
+- Use tag-driven artifact release workflow (`.github/workflows/release-artifacts.yml`)
 
 ## Better
 

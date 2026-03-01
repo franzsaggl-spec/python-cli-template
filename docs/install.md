@@ -24,6 +24,12 @@ curl -fsSL https://raw.githubusercontent.com/franzsaggl-spec/python-cli-template
 
 **Behavior:** native installs auto-update in the background on CLI usage.
 
+Optional pinned install version:
+
+- Linux/macOS: `ACME_INSTALL_VERSION=0.1.0`
+- PowerShell: `$env:ACME_INSTALL_VERSION = "0.1.0"`
+- CMD: `set ACME_INSTALL_VERSION=0.1.0`
+
 ---
 
 ## 2) Homebrew

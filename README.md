@@ -16,6 +16,8 @@ Simple, modern Python CLI template for internal tooling.
 
 ### Native install (recommended)
 
+Optional: pin version during install with `ACME_INSTALL_VERSION`.
+
 macOS / Linux / WSL:
 
 ```bash
